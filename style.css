@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    color: var(--cor8);
+}
+:root{
+    --cor1: #5425AF;
+    --cor2: #845EEE;
+    --cor3: #121826;
+    --cor4: #121826;
+    --cor5: #212936;
+    --cor6: #394150;
+    --cor7: #A1A1A9;
+    --cor8: #E5E7EB;
+    --cor9: #845EEE4D;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor3);
+}
+.brilho{
+    position: absolute;
+    right: 60%;
+    bottom: 58%;
+    background-image: radial-gradient(circle, #401f80, #121826);
+    filter: blur(50px);
+    height: 200px;
+    border-radius: 50%;
+    width: 200px;
+}
+.step{
+    border-radius: 10px;
+    padding: 40px 20px;
+    width: 90%;
+    background-color: var(--cor5);
+    box-shadow: 5px 6px 15px #000000af;
+    z-index: 1;
+    height: 350px;
+}
+h1{
+    font-size: 1.25rem;
+    padding-bottom: 30px;
+    font-weight: 500;
+}
+label{
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--cor7);
+    background-color: var(--cor5);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+input:focus{
+    border: 3px solid var(--cor7);
+    outline: none;
+}
+input::placeholder{
+    color: var(--cor8);
+    cursor: pointer;
+}
+.btn{
+    display: block;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    color: var(--cor8);
+    font-weight: 700;
+    background-image: linear-gradient(to top, #442893 , #66509e);
+    cursor: pointer;
+}
+.btn:active{
+    background-image: linear-gradient(to top, #311c69, #574093);
+}
+#steps{
+    font-weight: 200;
+    font-size: 0.825rem;
+    margin-top: 20px;
+}
