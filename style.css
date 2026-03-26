@@ -40,7 +40,7 @@ body {
 .step{
     border-radius: 10px;
     padding: 40px 20px;
-    width: 90%;
+    width: min(380px, 90%);
     background-color: var(--cor5);
     box-shadow: 5px 6px 15px #000000af;
     z-index: 0;
@@ -54,9 +54,6 @@ body {
     opacity: 1;
     pointer-events: all;
     z-index: 10;
-}
-.selecionado{
-    background-color: var(--cor8);
 }
 h1{
     font-size: 1.25rem;
@@ -112,10 +109,14 @@ input::placeholder{
     font-size: 0.875rem;
     width: 100%;
     border-radius: 10px;
-    border: .5px solid var(--cor7);
+    border: 1px solid var(--cor7);
     background-color: var(--cor6);
     padding: 15px;
     margin-bottom: 15px;
+}
+.destaque{
+    background-color: var(--cor1);
+    font-weight: 600;
 }
 .btn{
     display: block;
@@ -136,4 +137,7 @@ input::placeholder{
     font-weight: 200;
     font-size: 0.825rem;
     margin-top: 20px;
+}
+@media screen and (min-width) {
+    
 }
