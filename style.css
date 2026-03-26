@@ -43,17 +43,51 @@ body {
     width: 90%;
     background-color: var(--cor5);
     box-shadow: 5px 6px 15px #000000af;
-    z-index: 1;
-    height: 350px;
+    z-index: 0;
+    height: 370px;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+.show{
+    opacity: 1;
+    pointer-events: all;
+    z-index: 10;
+}
+.selecionado{
+    background-color: var(--cor8);
 }
 h1{
     font-size: 1.25rem;
     padding-bottom: 30px;
     font-weight: 500;
 }
+.h1-step2{
+    font-size: 1rem;
+    font-weight: 600;
+}
 label{
     font-size: 0.75rem;
     font-weight: 500;
+}
+#summary > div{
+    color: var(--cor7);
+}
+.sumary-email{
+    margin: 10px 0px 25px 0px;
+}
+p{
+    color: var(--cor8);
+    display: inline;
+}
+ul{
+    list-style-position: inside;
+    padding-left: 10px;
+}
+li{
+    margin-top: 5px;
+    
 }
 input{
     display: block;
@@ -72,6 +106,16 @@ input:focus{
 input::placeholder{
     color: var(--cor8);
     cursor: pointer;
+}
+.option{
+    cursor: pointer;
+    font-size: 0.875rem;
+    width: 100%;
+    border-radius: 10px;
+    border: .5px solid var(--cor7);
+    background-color: var(--cor6);
+    padding: 15px;
+    margin-bottom: 15px;
 }
 .btn{
     display: block;

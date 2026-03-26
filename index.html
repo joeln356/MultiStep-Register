@@ -9,35 +9,38 @@
 </head>
 <body>
   <div class="brilho"></div>
-  <div class="step">
-    <form action="">
-      <h1>Register</h1>
-      <label for="nome">Name</label>
-      <input type="text" name="nome" id="nome" placeholder="Enter your Name">
-      <label for="email">Email</label>
-      <input type="email" name="" id="email" placeholder="Example@gmail.com">
-      <button type="submit" class="btn">Continuar</button>
-    </form>
-  </div>
-<!-- 
-  <div class="step">
-      <h1>Which topics you are interested in?</h1>
-      <div>Software Development</div>
-      <div>User Experience</div>
-      <div>Graphic Design</div>
-      <button type="submit" class="btn">Continuar</button>
+  <div class="step show">
+      <form action="" class="">
+        <h1>Register</h1>
+        <label for="nome">Name</label>
+        <input type="text" name="nome" id="nome" placeholder="Enter your Name" required>
+        <label for="email">Email</label>
+        <input type="email" name="" id="email" placeholder="Example@gmail.com" required>
+        <button type="button" class="btn">Continuar</button>
+      </form>
   </div>
 
-  <div id="step">
+  <div class="step ">
+      <h1 class="h1-step2">Which topics you are interested in?</h1>
+      <div class="option">Software Development</div>
+      <div class="option">User Experience</div>
+      <div class="option">Graphic Design</div>
+      <button type="button" class="btn">Continuar</button>
+  </div>
+
+  <div class="step " id="summary">
     <h1>Summary</h1>
     <div>Nome: <p id="summar-name"></p> </div>
-    <div>Email: <p id="summaru-email"></p> </div>
+    <div class="sumary-email">Email: <p id="summaru-email"></p> </div>
     <div>Topics:</div>
-    <ul></ul>
-    <button type="submit" class="btn">Confirm</button>
-  </div>  -->
+    <ul>
+      
+    </ul>
+    <button type="button" class="btn">Confirm</button>
+  </div> 
   <div id="steps">
     Step 1 of 3 <span></span> <span></span><span></span>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
